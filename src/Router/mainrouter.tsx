@@ -1,6 +1,7 @@
 import {createBrowserRouter} from "react-router-dom"
 import Layout from "../common/Layout"
-import HomeScreen from "../Pages/HomeScreen"
+import Body from "../Pages/Body"
+import Contact from '../Pages/Contact'
 
 
 export const Mainrouter = createBrowserRouter([
@@ -10,8 +11,11 @@ export const Mainrouter = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <HomeScreen />
+                element: <Body />
             }
         ]
-    },
+    },{
+        path: '/genre-page',
+        element: <Contact />
+    }
 ])

@@ -1,15 +1,20 @@
 import {Outlet} from "react-router-dom"
-import Header from "./Header";
-import Footer from "./Footer";
+import DashboardHeaderHeader from "../static/DashboardHeader";
+import Sidebar from "../static/Sidebar"
+// import styled from "styled-components";
+// import Footer from "./Footer";
 
 
 const Layout = () => {
     return (
         <div>
-          <Header />
+           <DashboardHeaderHeader />
+<div style={{display:"flex"}}>
+        <Sidebar />
           <Outlet />
-      <Footer />
+        </div>
         </div>
     )
 }
 export default Layout;
+
